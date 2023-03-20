@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/Admin/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>Inventory Management Seller</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="logo">Inventory Management Seller</h1>
+        <nav>
+            <ul>
+                <li><a href="seller.html">Dashboard</a></li>
+                <li><a href="seller_order.html">Orders</a></li>
+                <li><a href="seller_product.html">Products</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Products</h2>
+            <div class="add_item">
+                <form action="admin.html">
+                    <div class="mb-3">
+                        <label for="product-id" class="form-label">Product ID</label>
+                        <input type="text" name="product-id" class="form-control" id="product-id">
+                    </div>
+                    <div class="mb-3">
+                        <label for="product-name" class="form-label">Product Name</label>
+                        <input type="text" name="product-name" class="form-control" id="product-name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="price">Price</label>
+                        <input type="number" name="product-price" class="form-control" aria-label="price">
+                    </div>
+                    <div class="mb-3">
+                        <label for="Stock">Stock</label>
+                        <input type="number" name="product-stock" class="form-control" aria-label="Stock">
+                    </div>
+                    <div class="mb-3">
+                        <label for="seller-id">Seller ID</label>
+                        <input type="text" name="seller-id" class="form-control" aria-label="seller-id">
+                    </div>
+                    <div class="mb-3">
+                        <label for="class">Product Class</label>
+                        <select class="form-control form-control-select" name="product-class" aria-label="class">
+                            <option value="">X</option>
+                            <option value="">12</option>
+                            <option value="">13 Pro</option>
+                            <option value="">10</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="img" class="form-label">Upload Image</label>
+                        <input type="file" name="product-img" class="form-control" aria-label="product-img">
+                    </div>
+                    <button type="submit" class="mt-20 add-product ">Add Product</button>
+                </form>
+            </div>
+        </section>
+</body>
+
+</html>

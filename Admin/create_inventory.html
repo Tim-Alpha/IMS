@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>Inventory Management Admin</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="logo">Inventory Management Admin</h1>
+        <nav>
+            <ul>
+                <li><a href="admin.html">Dashboard</a></li>
+                <li><a href="order.html">Orders</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="customer.html">Customers</a></li>
+                <li><a href="inventory.html">Inventory</a></li>
+                <li><a href="sellers.html">Sellers</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Create Inventory</h2>
+            <div class="add_item">
+                <form action="admin.html">
+                    <!-- <div class="mb-3">
+                        <label for="inventory_id" class="form-label">Inventory ID</label>
+                        <input type="text" class="form-control" id="inventory_id">
+                    </div> -->
+                    <div class="mb-3">
+                        <label for="product-class" class="form-label">Inventory Class</label>
+                        <input type="text" class="form-control" id="product-class">
+                    </div>
+                    <div class="mb-3">
+                        <label for="stock">Max Stock</label>
+                        <input type="number" class="form-control" aria-label="stock">
+                    </div>
+                    <button type="submit" class="mt-20 add-product ">Add Inventory</button>
+                </form>
+            </div>
+        </section>
+</body>
+
+</html>

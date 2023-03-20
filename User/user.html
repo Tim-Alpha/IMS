@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>iPhone Shopping</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/floatCSS.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="user.html">Home</a></li>
+        <li><a href="order-details.html">Order</a></li>
+      </ul>
+    </nav>
+    <h1>iPhone Shoppe</h1>
+  </header>
+  <main>
+    <section class="product">
+      <img src="/img/iphone1.png" alt="iPhone X">
+      <h2>iPhone X</h2>
+      <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua.</p>
+      <p class="price">$399.99</p>
+      <button>Buy Now</button>
+    </section>
+    <section class="product">
+      <img src="/img/iphone2.png" alt="iPhone 12">
+      <h2>iPhone 12</h2>
+      <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua.</p>
+      <p class="price">$399.99</p>
+      <button>Buy Now</button>
+    </section>
+    <section class="product">
+      <img src="/img/iphone3.png" alt="iPhone 13 Pro">
+      <h2>iPhone 13 Pro</h2>
+      <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua.</p>
+      <p class="price">$399.99</p>
+      <button>Buy Now</button>
+    </section>
+    <section class="product">
+      <img src="/img/iphone1.png" alt="iPhone 10">
+      <h2>iPhone 10</h2>
+      <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua.</p>
+      <p class="price">$399.99</p>
+      <button>Buy Now</button>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 iPhone Shoppe</p>
+  </footer>
+  <script>
+    let btns = document.getElementsByTagName("button");
+    for (let i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function () {
+        window.location.href = "order-details.html";
+      });
+    }
+  </script>
+  <a class="button-17 G-btn" role="button" href="/index.html">Main Panel</a>
+</body>
+
+</html>

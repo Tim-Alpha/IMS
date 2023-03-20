@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>iPhone Shopping</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="user.html">Home</a></li>
+        <li><a href="order-details.html">Order</a></li>
+      </ul>
+    </nav>
+    <h1>iPhone Shoppe</h1>
+  </header>
+  <main>
+    <div class="order_container">
+      <table>
+        <thead>
+          <tr>
+            <th>Order ID</th>
+            <th>Item Name</th>
+            <th>Order Date</th>
+            <th>Status</th>
+            <th>Expected Delivery</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>001</td>
+            <td>iPhone X</td>
+            <td>2023-03-21</td>
+            <td class="status">Processing</td>
+            <td>2023-03-28</td>
+          </tr>
+          <tr>
+            <td>002</td>
+            <td>iPhone 13 Pro</td>
+            <td>2023-03-20</td>
+            <td class="status">Shipped</td>
+            <td>2023-03-25</td>
+          </tr>
+          <tr>
+            <td>003</td>
+            <td>iPhone 10</td>
+            <td>2023-03-19</td>
+            <td class="status">Processing</td>
+            <td>2023-03-30</td>
+          </tr>
+          <tr>
+            <td>004</td>
+            <td>iPhone X</td>
+            <td>2023-03-19</td>
+            <td class="status">Cancelled</td>
+            <td>2023-03-21</td>
+          </tr>
+          <tr>
+            <td>004</td>
+            <td>iPhone X</td>
+            <td>2023-03-19</td>
+            <td class="status">Delivered</td>
+            <td>2023-03-21</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2023 iPhone Shoppe</p>
+  </footer>
+
+  <script>
+    let statuses = document.getElementsByClassName("status");
+    for (let i = 0; i < statuses.length; i++) {
+      let status = statuses[i].innerText;
+      if (status === "Processing") {
+        statuses[i].style.backgroundColor = "rgb(246, 246, 113)";
+      }
+      if (status === "Shipped") {
+        statuses[i].style.backgroundColor = "rgb(136, 223, 136)";
+      }
+      if (status === "Cancelled") {
+        statuses[i].style.backgroundColor = "rgb(244, 116, 116)";
+      }
+      if(status === "Delivered"){
+        statuses[i].style.backgroundColor = "green";
+        statuses[i].style.color = "white";
+      }
+    }
+  </script>
+
+
+</body>
+
+</html>
